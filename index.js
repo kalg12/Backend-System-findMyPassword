@@ -2,19 +2,13 @@ const express = require('express');
 const app = express();
 const port = 4000;
 
+const dataUsers = require('./src/routes/dataUsers.routes')
+
 //Middleware
 app.use(express.json());
 
 //Routes
-app.use('/', (req,res) => {
-    res.send('Hello World');
-});
-
-//Ruta para obtener todos los usuarios de la base de datos
-app.get('/users', (req,res) => {
-    res.send('Obtener todos los usuarios');
-});
-
+app.use(dataUsers)
 
 //Listen
 app.listen(port, () => {
