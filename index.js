@@ -1,11 +1,15 @@
+//Requires
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const port = 4000;
 
+//Routes import
 const dataUsers = require('./src/routes/dataUsers.routes')
 
-//Middleware
+//Middlewares
 app.use(express.json());
+app.use(cors());
 
 //Routes
 app.use(dataUsers)
