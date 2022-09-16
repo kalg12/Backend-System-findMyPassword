@@ -1,0 +1,28 @@
+{
+  "name": "backend-findmypassword",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalg12/Backend-System-findMyPassword.git"
+  },
+  "author": "Kevin Luciano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kalg12/Backend-System-findMyPassword/issues"
+  },
+  "homepage": "https://github.com/kalg12/Backend-System-findMyPassword#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
