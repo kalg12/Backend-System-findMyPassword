@@ -8,7 +8,7 @@ const connecion = async () => {
         user: USERNAME,
         password: PASSWORD,
         database: DATABASE,
-        port: PORT
+        port: 3306
       }
     )
     return conn
