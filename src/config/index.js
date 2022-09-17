@@ -1,9 +1,11 @@
+require('dotenv').config()
+
 const database = {
-  DATABASE: "datacetmar",
+  DATABASE: process.env.DATABASE,
   USERNAME: "root",
-  PASSWORD: "kevin1294",
-  PORT: "3306",
-  HOST: "localhost",
+  PASSWORD: process.env.PASSWORD,
+  PORT: process.env.PORT,
+  HOST: process.env.HOST,
 };
 
 module.exports = database;
